@@ -6,7 +6,7 @@
         id        = "com.phonegap.musicdownload"
         version   = "1.0.0">
 
-    <name>GeoNav</name>
+    <name>MusicDownloader</name>
 
     <description>
         Music Download mp3 automatic downloader.
