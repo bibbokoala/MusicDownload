@@ -6,7 +6,7 @@
         id        = "com.phonegap.musicdownload"
         version   = "1.0.0">
 
-    <name>MusicDownloader</name>
+    <name>MusicDownload</name>
 
     <description>
         Music Download mp3 automatic downloader.

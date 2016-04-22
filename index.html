@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>Youtube V3 api Search youtube video demo</title>
+    <title>MusicDownload</title>
     <link rel="stylesheet" href="maincss.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="lib/pretty-json.css" />
     <!-- Latest compiled and minified CSS -->
@@ -77,6 +77,13 @@
                     var items = data.items, videoList = "";
                     $.each(items, function(index,e) {
                         var logo = "http://www.linkin.it/link.png";
+                         videoList = videoList + 
+                          '<li class="hyv-video-list-item">'+
+                          '<strong>'+e.snippet.title+'</strong></a><br>'+
+                          '<img alt="'+e.snippet.title+'" src="'+e.snippet.thumbnails.default.url+'" width="120" height="90">'+
+                          '<iframe style="width: 320px; height: 100px; border: 0px none;" src="http://embed.yt-mp3.com/watch?v='+e.id+'"></iframe>'+
+                          '</li>';
+                        /*
                         videoList = videoList + 
                           '<li class="hyv-video-list-item">'+
                           '<img alt="'+e.snippet.title+'" src="'+e.snippet.thumbnails.default.url+'" width="120" height="90">'+
@@ -85,6 +92,7 @@
                           '<img src="http://www.youtubeinmp3.com/icon/folder.png" style="vertical-align:middle;"> '+
                           '<strong>'+e.snippet.title+'</strong></a><br>'+
                           '</li>';
+                          */
                           //console.log("video id: "+e.id+" - title: "+e.snippet.title);
                           //listDownload(e.id, e.snippet.title);
                     });
